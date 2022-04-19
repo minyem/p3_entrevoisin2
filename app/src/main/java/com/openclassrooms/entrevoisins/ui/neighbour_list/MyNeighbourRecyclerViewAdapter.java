@@ -64,7 +64,7 @@ public class MyNeighbourRecyclerViewAdapter extends RecyclerView.Adapter<MyNeigh
                 i.putExtra("photo", neighbour.getAvatarUrl());
                 i.putExtra("addresse", neighbour.getAddress());
                 i.putExtra("phonenumber", neighbour.getPhoneNumber());
-                i.putExtra("addressemail", neighbour.getId());
+                i.putExtra("addressemail", neighbour.getMailAddresse());
                 i.putExtra("aboutme", neighbour.getAboutMe());
                 holder.mainContent.getContext().startActivity(i);
             }

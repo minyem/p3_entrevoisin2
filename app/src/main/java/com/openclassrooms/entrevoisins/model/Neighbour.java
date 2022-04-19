@@ -22,6 +22,9 @@ public class Neighbour {
     /** Phone number */
     private String phoneNumber;
 
+    /** mail address */
+    private String mailAddresse;
+
     /** About me */
     private String aboutMe;
 
@@ -32,12 +35,13 @@ public class Neighbour {
      * @param avatarUrl
      */
     public Neighbour(long id, String name, String avatarUrl, String address,
-                     String phoneNumber, String aboutMe) {
+                     String phoneNumber, String addEmail, String aboutMe) {
         this.id = id;
         this.name = name;
         this.avatarUrl = avatarUrl;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.mailAddresse = addEmail;
         this.aboutMe = aboutMe;
     }
 
@@ -87,6 +91,14 @@ public class Neighbour {
 
     public void setAboutMe(String aboutMe) {
         this.aboutMe = aboutMe;
+    }
+
+    public String getMailAddresse() {
+        return mailAddresse ;
+    }
+
+    public void setMailAddresse(String addEmail) {
+        this.mailAddresse = addEmail;
     }
 
     @Override

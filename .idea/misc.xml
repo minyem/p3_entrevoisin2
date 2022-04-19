@@ -25,6 +25,11 @@
         <entry key="..\:/Users/pierr/OneDrive/Bureau/Deyine OpenClassrooms master Android-Entrevoisins/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
         <entry key="..\:/Users/pierr/OneDrive/Bureau/Deyine OpenClassrooms master Android-Entrevoisins/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.124" />
         <entry key="..\:/entreVoisinsOC-master/entreVoisinsOC-master/app/src/main/res/drawable/ic_mail.xml" value="0.1" />
+        <entry key="..\:/entreVoisinsOC-master/entreVoisinsOC-master/app/src/main/res/layout/activity_add_neighbour.xml" value="0.1" />
+        <entry key="..\:/entreVoisinsOC-master/entreVoisinsOC-master/app/src/main/res/layout/activity_list_neighbour.xml" value="0.1" />
+        <entry key="..\:/entreVoisinsOC-master/entreVoisinsOC-master/app/src/main/res/layout/fragment_list_neighbour.xml" value="0.1" />
+        <entry key="..\:/entreVoisinsOC-master/entreVoisinsOC-master/app/src/main/res/layout/fragment_neighbour.xml" value="0.1" />
+        <entry key="..\:/entreVoisinsOC-master/entreVoisinsOC-master/app/src/main/res/layout/fragment_neighbour_list.xml" value="0.1" />
         <entry key="..\:/entreVoisinsOC-master/entreVoisinsOC-master/app/src/main/res/layout/viewneighbouractivity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_add_neighbour.xml" value="0.15729166666666666" />
         <entry key="app/src/main/res/layout/activity_list_neighbour.xml" value="0.15729166666666666" />

@@ -12,7 +12,9 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.bumptech.glide.Glide;
 import com.openclassrooms.entrevoisins.R;
+import com.openclassrooms.entrevoisins.di.DI;
 import com.openclassrooms.entrevoisins.model.Neighbour;
+import com.openclassrooms.entrevoisins.service.NeighbourApiService;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -21,12 +23,13 @@ import butterknife.Unbinder;
 
 public class ViewNeighbourActivity extends FragmentActivity {
 
+    private NeighbourApiService mApiService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewneighbouractivity);
-
+        mApiService = DI.getNeighbourApiService();
         Intent bundle= getIntent();
         int id=bundle.getIntExtra("id",0);
         String userName=bundle.getStringExtra("username");
@@ -41,6 +44,7 @@ public class ViewNeighbourActivity extends FragmentActivity {
         TextView name1 = findViewById(R.id.nameLyt1);
         TextView address1 = findViewById(R.id.addressInput);
         TextView phone1 = findViewById(R.id.phoneNumberLyt);
+        TextView mail = findViewById(R.id.avatarUrlLyt);
         TextView apropos = findViewById(R.id.aboutMeLyt);
 
 
@@ -51,6 +55,7 @@ public class ViewNeighbourActivity extends FragmentActivity {
         name1.setText(userName);
         address1.setText(address);
         phone1.setText(numtel);
+        mail.setText(addmail);
         apropos.setText(aproposdemoi);
 
         findViewById(R.id.ReturnButton).setOnClickListener(new View.OnClickListener() {
@@ -63,9 +68,10 @@ public class ViewNeighbourActivity extends FragmentActivity {
         findViewById(R.id.button_etoile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Neighbour favoriteNeighbour = new  Neighbour(id,userName,photo,address,numtel,aproposdemoi);
+                Neighbour favoriteNeighbour = new  Neighbour(id,userName,photo,address,numtel,addmail, aproposdemoi);
                 // public Neighbour(long id, String name, String avatarUrl, String address,
-                //                     String phoneNumber, String aboutMe)
+                //                     String phoneNumber, String addEmail, String aboutMe)
+                mApiService.createNeighbour(favoriteNeighbour);
                 finish();
             }
         });

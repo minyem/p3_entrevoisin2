@@ -30,6 +30,7 @@ public class ViewNeighbourActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewneighbouractivity);
         mApiService = DI.getNeighbourApiService();
+
         Intent bundle= getIntent();
         int id=bundle.getIntExtra("id",0);
         String userName=bundle.getStringExtra("username");

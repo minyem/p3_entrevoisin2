@@ -26,7 +26,7 @@ public class ViewNeighbourtest {
         this.mNeighbours = mNeighbours;
         this.holder = holder;
     }
-    Intent i = new Intent(new holder.mainContent.getContext(), ViewNeighbourActivity.class);
+
 
     @BindView(R.id.main_content)
     public LinearLayout mainContent;
@@ -39,20 +39,20 @@ public class ViewNeighbourtest {
     @Test
            public void  getNeighbourWithSuccess()
     {
-        protected void onCreate(Bundle savedInstanceState);
+
 
     };
 
     @Test
             public void verifieValeurConforme()
     {
-        findViewById(R.id.ReturnButton).setOnClickListener(new View.OnClickListener());
+
     };
 
     @Test
     public  void verifieValeur()
     {
-        findViewById(R.id.button_etoile).setOnClickListener(new View.OnClickListener());
+
     };
 
 }
